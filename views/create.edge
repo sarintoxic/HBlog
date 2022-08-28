@@ -1,0 +1,63 @@
+@layout('layouts.app')
+
+@section('content')
+<script src="https://cdn.ckeditor.com/4.19.0/standard/ckeditor.js"></script>
+<!-- Page Header -->
+<header class="masthead">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="page-heading">
+          <h1>Đăng bài mới</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <form action="/posts/store" method="POST" encType="multipart/form-data">
+        <div class="control-group">
+          <div class="form-group floating-label-form-group controls">
+            <label>Người đăng</label>
+            <input type="text" name="username" placeholder="Tên người đăng" class="form-control">
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="form-group floating-label-form-group controls">
+            <label>Tiêu đề</label>
+            <input type="text" name="title" placeholder="Tiêu đề" class="form-control">
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="form-group floating-label-form-group controls">
+            <label>Mô tả</label>
+            <input type="text" name="description" placeholder="Mô tả" class="form-control">
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="form-group floating-label-form-group controls">
+            <label>Nội dung</label>
+             <textarea name="content" id="editor1" placeholder="Nội dung ..." cols="30" rows="10" class="form-control"></textarea>
+         <script>
+              CKEDITOR.replace( 'editor1' );
+          </script>
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <input type="file" name="image" class="form-control-file">
+        </div>
+        <div class="form-group my-4 text-center">
+          <button class="btn btn-primary">Đăng</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+@endsection 
+ 
+ 
+ 
