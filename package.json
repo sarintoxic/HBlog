@@ -1,65 +1,30 @@
 {
-  
-  "name": "myblog",
-  
-  "version": "1.0.1",
-  
-  "description": "My Blog using NodeJs and MongoDB",
-  
-  "main": "index.js",
-  
-  "scripts": {
-  
-    
-  "start": "node index.js",
-  
-    
-  "test": "echo \"Error: no test specified\" && exit 1"
-  
+  "engines": {
+    "node": "12.x"
   },
-  
+  "name": "myblog",
+  "version": "1.0.1",
+  "description": "My Blog using NodeJs and MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "keywords": [
-  
-    
-  "blog"
-  
+    "blog"
   ],
-  
   "author": "",
-  
   "license": "ISC",
-  
   "dependencies": {
-  
-    
-  "bcrypt": "^5.0.1",
-  
-    
-  "body-parser": "^1.20.0",
-  
-    
-  "connect-flash": "^0.1.1",
-  
-    
-  "connect-mongo": "^4.6.0",
-  
-    
-  "express": "^4.18.1",
-  
-    
-  "express-edge": "^2.0.2",
-  
-    
-  "express-fileupload": "^1.4.0",
-  
-    
-  "express-session": "^1.17.3",
-  
-    
-  "mongoose": "^6.4.2",
-  
-    
-  "startbootstrap-clean-blog": "^6.0.8"
-  
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^4.6.0",
+    "express": "^4.18.1",
+    "express-edge": "^2.0.2",
+    "express-fileupload": "^1.4.0",
+    "express-session": "^1.17.3",
+    "mongoose": "^6.5.3",
+    "startbootstrap-clean-blog": "^6.0.8"
   }
 }
